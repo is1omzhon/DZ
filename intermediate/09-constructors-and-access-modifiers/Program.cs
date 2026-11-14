@@ -15,20 +15,20 @@ var trCard01 = new TravelCard("TC01", 100);
 var trCard02 = new TravelCard("TC02", 0);
 
 bool result = trCard01.Pay(30);
-Console.WriteLine($"TC01.Pay(30): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result}, TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
 result = trCard01.Pay(80);
-Console.WriteLine($"TC01.Pay(80): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result}, TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
 result = trCard01.TopUp(50);
-Console.WriteLine($"TC01.TopUp(50): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result}, TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
 result = trCard01.Pay(80);
-Console.WriteLine($"TC01.Pay(80): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result},TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
 result = trCard02.TopUp(-10);
-Console.WriteLine($"TC02.TopUp(-10): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result}, TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
 result = trCard02.Pay(1);
-Console.WriteLine($"TC02.Pay(1): {result}; TC01={trCard01.Balance}, TC02={trCard02.Balance}");
+Console.WriteLine($"{result}, TC01={trCard01.Balance}, TC02={trCard02.Balance}");
 
